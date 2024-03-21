@@ -13,8 +13,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             IconButton(
                 onPressed: () {},
                 icon: SvgPicture.asset('assets/icons/menu.svg')),
-            CircleAvatar(
-                backgroundImage: AssetImage('assets/images/avatar.jpeg'))
+            CircleAvatar(backgroundImage: AssetImage('assets/images/photo.jpg'))
           ],
         ),
       ),
