@@ -12,6 +12,8 @@ class DetailPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(children: [
           DetailAppBar(house:house),
+          SizedBox(height: 20),
+          ContentIntro(),
         ],),
       ),
     );

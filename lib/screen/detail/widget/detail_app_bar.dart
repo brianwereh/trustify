@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:trustify/model/house.dart';
 
@@ -18,27 +19,35 @@ class DetailAppBar extends StatelessWidget {
             height: double.infinity,
           ),
           SafeArea(
-              child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                height: 20,
-                width: 20,
-                padding: EdgeInsets.all(5),
-                decoration:
-                    BoxDecoration(color: Colors.grey, shape: BoxShape.circle),
-                child: SvgPicture.asset('assets/icons/arrow.svg'),
-              ),
-              Container(
-                height: 20,
-                width: 20,
-                padding: EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    shape: BoxShape.circle),
-                child: SvgPicture.asset('assets/icons/mark.svg'),
-              )
-            ],
+              child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Container(
+                    height: 20,
+                    width: 20,
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                        color: Colors.grey, shape: BoxShape.circle),
+                    child: SvgPicture.asset('assets/icons/arrow.svg'),
+                  ),
+                ),
+                Container(
+                  height: 20,
+                  width: 20,
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                      color: Theme.of(context).primaryColor,
+                      shape: BoxShape.circle),
+                  child: SvgPicture.asset('assets/icons/mark.svg'),
+                )
+              ],
+            ),
           ))
         ],
       ),
