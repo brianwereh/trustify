@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
               backgroundColor: Color(0xFFF5F6F6),
             ),
             textTheme: TextTheme(
-              headline1: TextStyle(
+              displayLarge: TextStyle(
                 color: Color(0xFF100E34),
               ),
-              bodyText1: TextStyle(color: Color(0xFF10034).withOpacity(0.5)),
+              bodyLarge: TextStyle(color: Color(0xFF10034).withOpacity(0.5)),
             )),
         home: Homepage());
   }
