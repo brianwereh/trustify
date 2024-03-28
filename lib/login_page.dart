@@ -53,9 +53,14 @@ class _LoginPageState extends State<LoginPage> {
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20.0),
                     child: TextField(
+                      keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Email',
+                        prefixIcon: Icon(
+                          Icons.mail,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),
@@ -79,6 +84,10 @@ class _LoginPageState extends State<LoginPage> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Password',
+                        prefixIcon: Icon(
+                          Icons.lock,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548536381461",
+    "project_id": "flutter-firebase-20186",
+    "storage_bucket": "flutter-firebase-20186.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548536381461:android:ae9dc38d824e87d0565e1c",
+        "android_client_info": {
+          "package_name": "com.example.trustify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf-A0zZESrjMRXS0jsVRN-FpuZcZyRYVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trustify/screen/home/home.dart';
-// import 'login_page.dart';
+import 'login_page.dart';
 // import 'package:firebase_core/firebase_core.dart';
 
 void main() {
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               ),
               bodyLarge: TextStyle(color: Color(0xFF10034).withOpacity(0.5)),
             )),
-        home: Homepage());
-        // home: LoginPage());
+        // home: Homepage());
+        home: LoginPage());
   }
 }
