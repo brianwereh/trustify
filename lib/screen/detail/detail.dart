@@ -36,7 +36,7 @@ class DetailPage extends StatelessWidget {
                 child: Container(
                     alignment: Alignment.center,
                     padding: EdgeInsets.symmetric(vertical: 15),
-                    child: Text('Book Now',
+                    child: Text('Contact Owner',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 16,

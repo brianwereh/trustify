@@ -11,7 +11,7 @@ class About extends StatelessWidget {
             'About',
             style: Theme.of(context)
                 .textTheme
-                .headline1!
+                .displayLarge!
                 .copyWith(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           SizedBox(
@@ -20,7 +20,7 @@ class About extends StatelessWidget {
           Text(
             'Get a head start on homebuying season by checking out our latest deals and quick move-ins. New homes offer security, energy efficiency, and peace of mind.',
             style:
-                Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14),
+                Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 14),
           ),
         ],
       ),

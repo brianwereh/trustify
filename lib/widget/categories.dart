@@ -40,7 +40,7 @@ class _CategoriesState extends State<Categories> {
                     style: TextStyle(
                         color: currentSelect == index
                             ? Theme.of(context).primaryColor
-                            : Theme.of(context).textTheme.bodyText1!.color,
+                            : Theme.of(context).textTheme.bodyLarge!.color,
                         fontSize: currentSelect == index ? 16 : 14,
                         fontWeight: currentSelect == index
                             ? FontWeight.bold

@@ -7,18 +7,19 @@ class House {
 
   static List<House> generateRecommended() {
     return [
-      House('The Moon House', 'P455, Chhatak, Sylhet',
+      House('Bagik Hostels', 'Bagik, Behind University of Embu',
           'assets/images/house01.jpeg'),
-      House('The Moon House', 'P455, Chhatak, Sylhet',
+      House('Jerusalem Hostel', 'Kangaru Market, Embu',
           'assets/images/house02.jpeg'),
+      House('Kamiu Hostel', 'Kamiu, Embu', 'assets/images/house02.jpeg'),
     ];
   }
 
   static List<House> generateBestOffer() {
     return [
-      House('The Moon House', 'P455, Chhatak, Sylhet',
+      House('Bagik Hostels', 'Bagik, near Calvidas Hotel',
           'assets/images/offer01.jpeg'),
-      House('The Moon House', 'P455, Chhatak, Sylhet',
+      House('Jerusalem Hostel', 'Kangaru Market, Embu',
           'assets/images/offer02.jpeg'),
     ];
   }

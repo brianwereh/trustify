@@ -22,7 +22,7 @@ class HouseInfo extends StatelessWidget {
             children: [
               MenuInfo(
                   imageUrl: 'assets/icons/kitchen.svg',
-                  content: '2 Kitchen\n120 sqtft'),
+                  content: '1 Kitchen\n120 sqtft'),
               MenuInfo(
                   imageUrl: 'assets/icons/parking.svg',
                   content: '2 Parking\n115 sqft'),

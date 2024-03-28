@@ -43,7 +43,7 @@ class ContentIntro extends StatelessWidget {
                   .bodyLarge!
                   .copyWith(fontSize: 16, fontWeight: FontWeight.bold)),
           TextSpan(
-            text: 'Per Month',
+            text: ' Per Month',
             style:Theme.of(context)
             .textTheme
             .bodyLarge!
