@@ -25,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 75),
               // Hello again!
-              Text(
+             const Text(
                 'Hello again!',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               SizedBox(height: 10),
-              Text(
+             const Text(
                 'Welcome back, you\'ve been missed',
                 style: TextStyle(
                   fontSize: 20,
@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20.0),
-                    child: TextField(
+                    child:const TextField(
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -79,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20.0),
-                    child: TextField(
+                    child: const TextField(
                       obscureText: true,
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -93,7 +93,14 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              SizedBox(
+                height: 12.0,
+              ),
+             const Text(
+                "Forgot Password",
+                style: TextStyle(color: Colors.blue),
+              ),
+              SizedBox(height: 18),
 
               // sign in button
               Padding(
@@ -104,8 +111,9 @@ class _LoginPageState extends State<LoginPage> {
                     color: Colors.deepPurple,
                     borderRadius: BorderRadius.circular(12),
                   ),
+                  
                   child: Center(
-                    child: Text(
+                    child:  Text(
                       'Sign In',
                       style: TextStyle(
                         color: Colors.white,
@@ -122,13 +130,13 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                 const Text(
                     'Not a member?',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text(
+                 const Text(
                     ' Register now',
                     style: TextStyle(
                       color: Colors.blue,
