@@ -13,7 +13,7 @@ const String tSignInWithGoogle = "Sign-In with Google";
 
 
 // -- Splash Screen Text
-const String tAppName = ".trustify/";
+const String tAppName = "Trustify";
 const String tAppTagLine = "Find your desired house. \nFree For Everyone";
 
 
@@ -31,7 +31,7 @@ const String tOnBoardingCounter3 = "3/3";
 
 // -- Welcome Screen Text
 const String tWelcomeTitle = "Lets find a Home";
-const String tWelcomeSubTitle = "Let's put your creativity on the development highway.";
+const String tWelcomeSubTitle = "Let's put your house search on the trustify.";
 
 
 // -- Login Screen Text
