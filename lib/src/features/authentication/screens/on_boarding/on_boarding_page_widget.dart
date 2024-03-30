@@ -16,7 +16,7 @@ class OnBoardingPageWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Container(
       padding: const EdgeInsets.all(tDefaultSize),
-      color: model.bgColor,
+      color: Color(int.parse(model.bgColor)),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -28,7 +28,7 @@ class OnBoardingPageWidget extends StatelessWidget {
             children: [
               Text(
                 model.title,
-                style: Theme.of(context).textTheme.headline3,
+                style: Theme.of(context).textTheme.displaySmall,
               ),
               Text(
                 model.subTitle,
@@ -38,7 +38,7 @@ class OnBoardingPageWidget extends StatelessWidget {
           ),
           Text(
             model.counterText,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(
             height: 80.0,
