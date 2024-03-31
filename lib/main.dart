@@ -4,7 +4,6 @@ import 'package:trustify/screen/home/home.dart';
 import 'package:trustify/src/features/authentication/screens/on_boarding/on_boarding_screen.dart';
 import 'package:trustify/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:trustify/src/utilis/theme/theme.dart';
-import 'login_page.dart';
 // import 'package:firebase_core/firebase_core.dart';
 
 void main() {
