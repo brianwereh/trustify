@@ -8,11 +8,9 @@ import 'package:trustify/src/features/authentication/models/model_on_boarding.da
 
 import '../screens/on_boarding/on_boarding_page_widget.dart';
 
-class OnBoardingController extends GetxController{
-
+class OnBoardingController extends GetxController {
   final controller = LiquidController();
   RxInt currentPage = 0.obs;
-
 
   final pages = [
     OnBoardingPageWidget(
@@ -21,7 +19,7 @@ class OnBoardingController extends GetxController{
         title: tOnBoardingTitle1,
         subTitle: tOnBoardingSubTitle1,
         counterText: tOnBoardingCounter1,
-        bgColor: tOnBoardingPage1Color,
+        bgColor: tOnBoardingPage1Color.toString(),
       ),
     ),
     OnBoardingPageWidget(
@@ -30,7 +28,7 @@ class OnBoardingController extends GetxController{
         title: tOnBoardingTitle2,
         subTitle: tOnBoardingSubTitle2,
         counterText: tOnBoardingCounter2,
-        bgColor: tOnBoardingPage2Color,
+        bgColor: tOnBoardingPage2Color.toString(),
       ),
     ),
     OnBoardingPageWidget(
@@ -39,16 +37,17 @@ class OnBoardingController extends GetxController{
         title: tOnBoardingTitle3,
         subTitle: tOnBoardingSubTitle3,
         counterText: tOnBoardingCounter3,
-        bgColor: tOnBoardingPage3Color,
+        bgColor: tOnBoardingPage3Color.toString(),
       ),
     ),
   ];
-
 
   skip() => controller.jumpToPage(page: 2);
   animateToNextSlide() {
     int nextPage = controller.currentPage + 1;
     controller.animateToPage(page: nextPage);
   }
-  onPageChangedCallback(int activePageIndex) => currentPage.value = activePageIndex;
+
+  onPageChangedCallback(int activePageIndex) =>
+      currentPage.value = activePageIndex;
 }

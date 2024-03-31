@@ -10,13 +10,21 @@ class OnBoardingPageWidget extends StatelessWidget {
 
   final OnBoardingModel model;
 
+  Color _parseColor(String colorString) {
+    if (colorString.startsWith("Color(") && colorString.endsWith(")")) {
+      colorString = colorString.substring(6, colorString.length - 1);
+    }
+    String formattedColor = colorString.replaceAll("#", "");
+    int parsedColor = int.tryParse(formattedColor, radix: 16) ?? 0xFFFFFFFF;
+    return Color(parsedColor);
+  }
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
       padding: const EdgeInsets.all(tDefaultSize),
-      color: Color(int.parse(model.bgColor)),
+      color: _parseColor(model.bgColor),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

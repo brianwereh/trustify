@@ -37,8 +37,8 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       // home: Homepage());
       // home: LoginPage());
-      // home: SplashScreen(),
-      home: OnBoardingScreen(),
+      home: SplashScreen(),
+      // home: OnBoardingScreen(),
     );
   }
 }

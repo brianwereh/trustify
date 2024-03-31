@@ -18,12 +18,12 @@ const String tAppTagLine = "Find your desired house. \nFree For Everyone";
 
 
 // -- On Boarding Text
-const String tOnBoardingTitle1 = "Build Home";
-const String tOnBoardingTitle2 = "Learn from YouTube";
-const String tOnBoardingTitle3 = "Get Code & Resources";
+const String tOnBoardingTitle1 = "Find Your Perfect Home";
+const String tOnBoardingTitle2 = "Your Home, Your Sanctuary";
+const String tOnBoardingTitle3 = "Experience Modern Living";
 const String tOnBoardingSubTitle1 = "Let's start your journey with us on this amazing and easy platform.";
-const String tOnBoardingSubTitle2 = "Get Video Tutorials of each topic to learn things easily.";
-const String tOnBoardingSubTitle3 = "Save time by just copy pasting complete apps you learned from videos.";
+const String tOnBoardingSubTitle2 = "Unlock the Door to Comfort and Convenience.";
+const String tOnBoardingSubTitle3 = "Discover Homes Tailored to Your Lifestyle.";
 const String tOnBoardingCounter1 = "1/3";
 const String tOnBoardingCounter2 = "2/3";
 const String tOnBoardingCounter3 = "3/3";

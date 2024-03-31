@@ -16,4 +16,4 @@ const tOnBoardingPage2Color = Color(0xfffddcdf);
 const tOnBoardingPage3Color = Color(0xffffdcbd);
 
 //-- Welcome Screens Image
-const String tWelcomeScreenImage = "assets/images/welcome_images/welcome-screen.png";
+// const String tWelcomeScreenImage = "assets/images/welcome_images/welcome-screen.png";
