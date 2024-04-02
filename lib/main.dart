@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
         defaultTransition: Transition.leftToRightWithFade,
         transitionDuration: const Duration(microseconds: 500),
         // home: Dashboard());
-        // home: const CircularProgressIndicator());
-        home: ProfileScreen());
+        home: const CircularProgressIndicator());
+        // home: ProfileScreen());
     // home: OnBoardingScreen(),
   }
 }
