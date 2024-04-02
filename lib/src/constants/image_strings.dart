@@ -23,4 +23,13 @@ const String tGoogleLogoImage = "assets/images/logo/google-logo.png";
 
 // -- Forget Password Images
 const String tForgetPasswordImage =
-    "assets/images/forget_password/forget-password.png";
+    "assets/images/forget_password/forget-password.jpg";
+
+// --Dashboard Images
+const String tUserProfileImage = "assets/images/dashboard/photo.jpg";
+const String tProfileImage = "assets/images/dashboard/photo.jpg";
+const String tBannerImage1 = "assets/images/dashboard/on-boarding-image-1.png";
+const String tBannerImage2 = "assets/images/dashboard/on-boarding-image-3.jpeg";
+const String tBookmarkIcon = "assets/images/dashboard/on-boarding-image-3.jpeg";
+const String tTopCourseImage1 = "assets/images/dashboard/house02.jpeg";
+const String tTopCourseImage2 = "assets/images/dashboard/house01.jpeg";

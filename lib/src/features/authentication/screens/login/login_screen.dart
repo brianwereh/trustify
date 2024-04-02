@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:trustify/src/common_widgets/form/form_header_widget.dart';
 import 'package:trustify/src/constants/image_strings.dart';
 import 'package:trustify/src/constants/sizes.dart';
 import 'package:trustify/src/constants/text_strings.dart';
@@ -22,9 +23,14 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                LoginHeaderWidget(),
+                // LoginHeaderWidget(),
+                FormHeaderWidget(
+                  image: tWelcomeScreenImage,
+                  title: tLogin,
+                  subTitle: tLoginSubTitle,
+                ),
                 LoginForm(),
-                LoginFooterWidget()
+                LoginFooterWidget(),
               ],
             ),
           ),

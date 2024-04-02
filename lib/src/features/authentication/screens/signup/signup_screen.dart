@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 import 'package:trustify/src/common_widgets/form/form_header_widget.dart';
 import 'package:trustify/src/constants/colors.dart';
 import 'package:trustify/src/constants/image_strings.dart';
 import 'package:trustify/src/constants/sizes.dart';
 import 'package:trustify/src/constants/text_strings.dart';
+import 'package:trustify/src/features/authentication/screens/login/login_screen.dart';
 import 'package:trustify/src/features/authentication/screens/signup/widgets/signup_form_widget.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -41,7 +43,7 @@ class SignUpScreen extends StatelessWidget {
                       ),
                     ),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () => Get.to(()=> const LoginScreen()),
                         child: Text.rich(TextSpan(children: [
                           TextSpan(
                               text: tAlreadyHaveAnAccount,
