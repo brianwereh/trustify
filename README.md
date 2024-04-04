@@ -1,6 +1,8 @@
 # trustify
 
 A new Flutter project.
+image
+![Image](assets\images\dashboard\on-boarding-image-1.png)
 
 ## Getting Started
 
