@@ -17,7 +17,7 @@ class Homepage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            WelcomeText(),
+            // WelcomeText(),
             SearchInput(),
             Categories(),
             RecommendedHouse(),

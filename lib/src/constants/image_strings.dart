@@ -33,3 +33,5 @@ const String tBannerImage2 = "assets/images/dashboard/on-boarding-image-3.jpeg";
 const String tBookmarkIcon = "assets/images/dashboard/on-boarding-image-3.jpeg";
 const String tTopCourseImage1 = "assets/images/dashboard/house02.jpeg";
 const String tTopCourseImage2 = "assets/images/dashboard/house01.jpeg";
+const String tTopCourseImage3 = "assets/images/dashboard/offer02.jpeg";
+const String tTopCourseImage4 = "assets/images/dashboard/offer01.jpeg";

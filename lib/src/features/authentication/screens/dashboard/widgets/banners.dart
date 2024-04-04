@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:trustify/screen/home/home.dart';
 import 'package:trustify/src/constants/colors.dart';
 import 'package:trustify/src/constants/image_strings.dart';
 import 'package:trustify/src/constants/sizes.dart';
@@ -30,10 +32,10 @@ class DashboardBanners extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
+                const Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     // Flexible(child: Image(image: AssetImage(tBookmarkIcon))),
                     Flexible(child: Image(image: AssetImage(tBannerImage1))),
                   ],
@@ -68,10 +70,10 @@ class DashboardBanners extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         // Flexible(
                         //     child: Image(image: AssetImage(tBookmarkIcon))),
                         Flexible(
@@ -93,7 +95,8 @@ class DashboardBanners extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: OutlinedButton(
-                      onPressed: () {}, child: const Text(tDashboardButton)),
+                      onPressed: () => Get.to(() => Homepage()), 
+                      child: const Text(tDashboardButton)),
                 ),
               )
             ],

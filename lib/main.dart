@@ -2,11 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:trustify/firebase_options.dart';
-import 'package:trustify/screen/home/home.dart';
-import 'package:trustify/src/features/authentication/screens/dashboard/profile/profile.dart';
-import 'package:trustify/src/features/authentication/screens/dashboard/widgets/dashboard.dart';
 import 'package:trustify/src/features/authentication/screens/on_boarding/on_boarding_screen.dart';
-import 'package:trustify/src/features/authentication/screens/splash_screen/splash_screen.dart';
+
 import 'package:trustify/src/features/repository/authentication_repository/exceptions/authentication_repository.dart';
 import 'package:trustify/src/utilis/theme/theme.dart';
 // import 'package:firebase_core/firebase_core.dart';
@@ -28,10 +25,10 @@ class MyApp extends StatelessWidget {
         darkTheme: TAppTheme.darkTheme,
         themeMode: ThemeMode.system,
         defaultTransition: Transition.leftToRightWithFade,
-        transitionDuration: const Duration(microseconds: 500),
+        transitionDuration: const Duration(microseconds: 1000),
         // home: Dashboard());
-        home: const CircularProgressIndicator());
-        // home: ProfileScreen());
-    // home: OnBoardingScreen(),
+        home: const Scaffold( body: Center(child: CircularProgressIndicator())),);
+        // home: SplashScreen());
+        // home: OnBoardingScreen());
   }
 }

@@ -7,11 +7,16 @@ class House {
 
   static List<House> generateRecommended() {
     return [
-      House('Bagik Hostels', 'Bagik, Behind University of Embu',
-          'assets/images/house01.jpeg'),
+      House('Bagik Hostels', 'Bagik, near Calvidas Hotel',
+          'assets/images/offer01.jpeg'),
       House('Jerusalem Hostel', 'Kangaru Market, Embu',
-          'assets/images/house02.jpeg'),
-      House('Kamiu Hostel', 'Kamiu, Embu', 'assets/images/house02.jpeg'),
+          'assets/images/offer02.jpeg'),
+      House('White House', 'Gakwegori Town, Embu',
+          'assets/images/on_boarding_images/on-boarding-image-2.jpeg'),
+      House('Destiney Appartment', 'Chuka Uni, Chuka',
+          'assets/images/on_boarding_images/on-boarding-image-3.jpeg'),
+      House('Perez', 'Kamiu, Embu',
+          'assets/images/on_boarding_images/on-boarding-image-1.png'),
     ];
   }
 
@@ -21,6 +26,12 @@ class House {
           'assets/images/offer01.jpeg'),
       House('Jerusalem Hostel', 'Kangaru Market, Embu',
           'assets/images/offer02.jpeg'),
+      House('White House', 'Gakwegori Town, Embu',
+          'assets/images/on_boarding_images/on-boarding-image-2.jpeg'),
+      House('Destiney Appartment', 'Chuka Uni, Chuka',
+          'assets/images/on_boarding_images/on-boarding-image-3.jpeg'),
+      House('Perez', 'Kamiu, Embu',
+          'assets/images/on_boarding_images/on-boarding-image-1.png'),
     ];
   }
 }

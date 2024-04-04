@@ -7,11 +7,10 @@ import 'package:trustify/src/constants/sizes.dart';
 import 'package:trustify/src/constants/text_strings.dart';
 import 'package:trustify/src/features/authentication/controllers/profile_controller.dart';
 import 'package:trustify/src/features/authentication/models/user_model.dart';
+import 'package:trustify/src/features/authentication/screens/dashboard/profile/update_profile.dart';
 
-import 'profile_detail_screen.dart';
-
-class UpdateProfileScreen extends StatelessWidget {
-  const UpdateProfileScreen({Key? key}) : super(key: key);
+class ProfileDetailScreen extends StatelessWidget {
+  const ProfileDetailScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,13 +34,7 @@ class UpdateProfileScreen extends StatelessWidget {
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
                 if (snapshot.hasData) {
-                  UserModel user = snapshot.data as UserModel;
-//Controllers
-  final email = TextEditingController(text: user.email);
-  final password = TextEditingController(text: user.password);
-  final fullName = TextEditingController(text: user.fullName);
-  final phoneNo = TextEditingController(text: user.phoneNo);
-
+                  UserModel userData = snapshot.data as UserModel;
                   return Column(
                     children: [
                       // -- IMAGE with ICON
@@ -83,8 +76,7 @@ class UpdateProfileScreen extends StatelessWidget {
                         child: Column(
                           children: [
                             TextFormField(
-                              controller: fullName,
-                              // initialValue: userData.fullName,
+                              initialValue: userData.fullName,
                               decoration: const InputDecoration(
                                 label: Text(tFullName),
                                 prefixIcon: Icon(Icons.person_2_outlined),
@@ -92,8 +84,7 @@ class UpdateProfileScreen extends StatelessWidget {
                             ),
                             const SizedBox(height: tFormHeight - 20),
                             TextFormField(
-                              controller: email,
-                              // initialValue: userData.email,
+                              initialValue: userData.email,
                               decoration: const InputDecoration(
                                 label: Text(tEmail),
                                 prefixIcon: Icon(Icons.email),
@@ -101,8 +92,7 @@ class UpdateProfileScreen extends StatelessWidget {
                             ),
                             const SizedBox(height: tFormHeight - 20),
                             TextFormField(
-                              controller: phoneNo,
-                              // initialValue: userData.phoneNo,
+                              initialValue: userData.phoneNo,
                               decoration: const InputDecoration(
                                 label: Text(tPhoneNo),
                                 prefixIcon: Icon(Icons.phone),
@@ -110,15 +100,13 @@ class UpdateProfileScreen extends StatelessWidget {
                             ),
                             const SizedBox(height: tFormHeight - 20),
                             TextFormField(
-                              controller: password,
-                              // initialValue: userData.password,
+                              initialValue: userData.password,
                               obscureText: true,
                               decoration: InputDecoration(
                                 label: const Text(tPassword),
                                 prefixIcon: const Icon(Icons.lock),
                                 suffixIcon: IconButton(
-                                  icon:
-                                      const Icon(Icons.remove_red_eye_outlined),
+                                  icon: const Icon(Icons.remove_red_eye_outlined),
                                   onPressed: () {},
                                 ),
                               ),
@@ -129,17 +117,7 @@ class UpdateProfileScreen extends StatelessWidget {
                             SizedBox(
                               width: double.infinity,
                               child: ElevatedButton(
-                                onPressed: () async {
-                                  final userData = UserModel (
-                                    password: password.text.trim(),
-                                    email: email.text.trim(),
-                                    fullName: fullName.text.trim(),
-                                    phoneNo: phoneNo.text.trim(),
-                                  );
-
-                                 await controller.updateRecord(user);
-                                },
-                                // => Get.to(() => const UpdateProfileScreen()), // Navigate to ProfileDetailsScreen
+                                onPressed: () => Get.to(() => const UpdateProfileScreen()), // Navigate to ProfileDetailsScreen
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: tPrimaryColor,
                                   side: BorderSide.none,
@@ -175,8 +153,7 @@ class UpdateProfileScreen extends StatelessWidget {
                                 ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
-                                    backgroundColor:
-                                        Colors.redAccent.withOpacity(0.1),
+                                    backgroundColor: Colors.redAccent.withOpacity(0.1),
                                     elevation: 0,
                                     foregroundColor: Colors.red,
                                     shape: const StadiumBorder(),

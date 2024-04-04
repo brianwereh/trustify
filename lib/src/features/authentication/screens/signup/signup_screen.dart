@@ -11,7 +11,7 @@ import 'package:trustify/src/features/authentication/screens/login/login_screen.
 import 'package:trustify/src/features/authentication/screens/signup/widgets/signup_form_widget.dart';
 
 class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({Key? key}) : super(key: key);
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

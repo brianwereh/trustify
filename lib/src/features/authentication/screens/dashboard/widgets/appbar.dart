@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:trustify/src/constants/text_strings.dart';
 import 'package:trustify/src/features/authentication/screens/dashboard/profile/profile.dart';
-import 'package:trustify/src/features/repository/authentication_repository/exceptions/authentication_repository.dart';
 
 import '../../../../../constants/colors.dart';
 import '../../../../../constants/image_strings.dart';
@@ -37,6 +36,7 @@ class DashboardAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
+  // TODO: implement preferred Size
+
   Size get preferredSize => const Size.fromHeight(55);
 }

@@ -72,13 +72,13 @@ class Dashboard extends StatelessWidget {
                                     child: Text(
                                       "Get Affordable Houses",
                                       style: txtTheme.titleLarge,
-                                      maxLines: 2,
+                                      maxLines: 3,
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
                                   const SizedBox(width: tDashboardCardPadding),
                                   const Image(
-                                    image: AssetImage(tTopCourseImage1),
+                                    image: AssetImage(tTopCourseImage4),
                                     height: 110,
                                   ),
                                 ],
@@ -99,12 +99,78 @@ class Dashboard extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "3 Sections",
-                                        style: txtTheme.displayMedium,
+                                        "Blue Valley",
+                                        style: txtTheme.titleLarge,
                                         overflow: TextOverflow.ellipsis,
                                       ),
                                       Text(
-                                        "See More Houses",
+                                        "Near Embu Law Court",
+                                        style: txtTheme.bodyMedium,
+                                        overflow: TextOverflow.ellipsis,
+                                      )
+                                    ],
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 320,
+                      height: 200,
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 10, top: 5),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: tCardBgColor),
+                          padding: const EdgeInsets.all(10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Flexible(
+                                    child: Text(
+                                      "Get your Preffered Hostel",
+                                      style: txtTheme.titleLarge,
+                                      maxLines: 2,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ),
+                                  const SizedBox(width: tDashboardCardPadding),
+                                  const Image(
+                                    image: AssetImage(tTopCourseImage3),
+                                    height: 110,
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                        shape: const CircleBorder()),
+                                    onPressed: () {},
+                                    child: const Icon(Icons.play_arrow),
+                                  ),
+                                  const SizedBox(
+                                    height: tDashboardCardPadding,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Kutus",
+                                        style: txtTheme.titleLarge,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                      Text(
+                                        "Opposite Kirinyaga University.",
                                         style: txtTheme.bodyMedium,
                                         overflow: TextOverflow.ellipsis,
                                       )
@@ -165,12 +231,12 @@ class Dashboard extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "3 Sections",
-                                        style: txtTheme.displayMedium,
+                                        "True Comfort",
+                                        style: txtTheme.titleLarge,
                                         overflow: TextOverflow.ellipsis,
                                       ),
                                       Text(
-                                        "See More Houses",
+                                        "Near Chuka University",
                                         style: txtTheme.bodyMedium,
                                         overflow: TextOverflow.ellipsis,
                                       )
@@ -202,7 +268,7 @@ class Dashboard extends StatelessWidget {
                                 children: [
                                   Flexible(
                                     child: Text(
-                                      "Get Affordable Houses",
+                                      "Convenient Housing",
                                       style: txtTheme.titleLarge,
                                       maxLines: 2,
                                       overflow: TextOverflow.ellipsis,
@@ -210,7 +276,7 @@ class Dashboard extends StatelessWidget {
                                   ),
                                   const SizedBox(width: tDashboardCardPadding),
                                   const Image(
-                                    image: AssetImage(tTopCourseImage1),
+                                    image: AssetImage(tTopCourseImage2),
                                     height: 110,
                                   ),
                                 ],
@@ -231,78 +297,12 @@ class Dashboard extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "3 Sections",
-                                        style: txtTheme.displayMedium,
+                                        "Njukiri",
+                                        style: txtTheme.titleLarge,
                                         overflow: TextOverflow.ellipsis,
                                       ),
                                       Text(
-                                        "See More Houses",
-                                        style: txtTheme.bodyMedium,
-                                        overflow: TextOverflow.ellipsis,
-                                      )
-                                    ],
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 320,
-                      height: 200,
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 10, top: 5),
-                        child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: tCardBgColor),
-                          padding: const EdgeInsets.all(10),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Flexible(
-                                    child: Text(
-                                      "Get Affordable Houses",
-                                      style: txtTheme.titleLarge,
-                                      maxLines: 2,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ),
-                                  const SizedBox(width: tDashboardCardPadding),
-                                  const Image(
-                                    image: AssetImage(tTopCourseImage1),
-                                    height: 110,
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                        shape: const CircleBorder()),
-                                    onPressed: () {},
-                                    child: const Icon(Icons.play_arrow),
-                                  ),
-                                  const SizedBox(
-                                    height: tDashboardCardPadding,
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "3 Sections",
-                                        style: txtTheme.displayMedium,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                      Text(
-                                        "See More Houses",
+                                        "Near Camp Ndunda, Embu",
                                         style: txtTheme.bodyMedium,
                                         overflow: TextOverflow.ellipsis,
                                       )
